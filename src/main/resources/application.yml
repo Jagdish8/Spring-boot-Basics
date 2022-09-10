@@ -1,0 +1,30 @@
+server:
+  port: 6969
+
+welcome:
+  message: '"WELLLCUMMMMMMM"'
+
+# configuration for jpa and hibernate to connect with the h2 database
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    username: jagdish
+    url: jdbc:h2:mem:jagdishData
+    driverClassName: org.h2.Driver
+    password: '6969'
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+##for connecting with mysql
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: jagdish
+#    url: jdbc:mysql://localhost:6996/jagdishData
+#    password: '6969'
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'
